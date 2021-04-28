@@ -1,7 +1,7 @@
 version: '2'
 services:
   dev:
-    image: kubeless-ui-dev
+    image: joaonart/kubeless-ui-dev
     build:
       context: .
       dockerfile: Dockerfile-prod
