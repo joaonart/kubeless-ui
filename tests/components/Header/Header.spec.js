@@ -25,6 +25,6 @@ describe('(Component) Header', () => {
 
   it('Renders app logo', () => {
     const welcome = _wrapper.find('img')
-    expect(welcome.length).toBe(1)
+    expect(welcome.length).toBe(0)
   })
 })
