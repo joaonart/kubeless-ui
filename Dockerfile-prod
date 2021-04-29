@@ -1,4 +1,4 @@
-FROM bitnami/node
+FROM bitnami/node:8-prod
 
 ENV TERM=xterm
 ENV ROOT /var/www/kubeless-ui
@@ -16,6 +16,8 @@ RUN install_packages apt-transport-https gnupg && \
     apt-get purge -y gnupg && \
     apt-get clean
 RUN install_packages yarn
+
+EXPOSE 3000
 
 # build & test
 COPY . $ROOT/src/
